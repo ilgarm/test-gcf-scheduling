@@ -1,0 +1,9 @@
+# IDE/Desktop
+.DS_Store
+.idea
+
+test-gcf-scheduling-key.json
+gcf-test-scheduling-staging-lifecycle.json
+
+gae/scheduler-app/credentials.yaml
+gcf/scheduled-function/settings.json

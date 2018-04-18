@@ -1,0 +1,24 @@
+service: default
+runtime: python27
+
+api_version: 1
+instance_class: B1
+threadsafe: true
+
+manual_scaling:
+  instances: 1
+
+env_variables:
+  ScheduleFunctionUrl: "https://us-central1-test-gcf-scheduling.cloudfunctions.net/scheduled"
+
+includes:
+- credentials.yaml
+
+handlers:
+- url: /schedule
+  secure: always
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
