@@ -32,7 +32,7 @@ gsutil lifecycle set gcf-test-scheduling-staging-lifecycle.json gs://gcf-test-sc
 gcloud beta functions deploy scheduled --source=gcf/scheduled-function --stage-bucket gcf-test-scheduling-staging --memory=128MB --region=us-central1 --trigger-http
 ```
 
-### deploying App Angine resources
+### deploying App Engine resources
 ```bash
 gcloud app deploy gae/scheduler-app/app.yaml
 gcloud app deploy gae/scheduler-app/cron.yaml
